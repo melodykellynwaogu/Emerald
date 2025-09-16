@@ -12,11 +12,11 @@ document.querySelectorAll(".property-card").forEach(card => {
     chatItems.push({ id, title, price });
     localStorage.setItem("chatItems", JSON.stringify(chatItems));
     alert(`${title} added to chat!`);
-    window.location.href = "Chat.html";
+    window.location.href = "chat.html";
   });
 
   buyBtn.addEventListener("click", () => {
     localStorage.setItem("buyItem", JSON.stringify({ id, title, price }));
-    window.location.href = "Payment.html";
+    window.location.href = "payment.html";
   });
 });
