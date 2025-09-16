@@ -1,0 +1,180 @@
+/* Responsive Design */
+@media (max-width: 900px) {
+  .gallery-container {
+    gap: 12px;
+    padding: 15px 5px;
+  }
+}
+
+@media (max-width: 600px) {
+  nav {
+    padding: 8px 2px;
+  }
+  nav a {
+    margin: 0 6px;
+    font-size: 15px;
+  }
+  header {
+    padding: 15px 5px;
+  }
+  .gallery-container {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding: 8px 2px;
+  }
+  .property-card {
+    border-radius: 8px;
+  }
+  .property-card img {
+    border-radius: 8px;
+  }
+  .overlay {
+    padding: 8px 2px;
+    font-size: 0.98rem;
+  }
+  .price {
+    font-size: 1rem;
+  }
+  .actions button {
+    font-size: 0.98rem;
+    padding: 8px 10px;
+  }
+  footer {
+    padding: 10px 2px;
+    font-size: 0.95rem;
+  }
+  .social-icons a {
+    font-size: 17px;
+    margin: 0 4px;
+  }
+}
+body {
+  background-image: url('/images/exam8.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+nav {
+  background-color: rgba(0,0,0,0.6);
+  padding: 10px;
+  text-align: center;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 18px;
+}
+nav a:hover {
+  color: #007bff;
+}
+
+header {
+  text-align: center;
+  padding: 30px 20px;
+  color: white;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 30px;
+}
+
+.property-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.property-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.property-card:hover img {
+  transform: scale(1.1);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.actions {
+  margin-top: 10px;
+}
+
+.actions button {
+  margin: 5px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.chat-btn {
+  background: #28a745;
+  color: white;
+}
+
+.chat-btn:hover {
+  background: #218838;
+}
+
+.buy-btn {
+  background: #ffc107;
+  color: black;
+}
+
+.buy-btn:hover {
+  background: #e0a800;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: 30px;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: white;
+  margin: 0 8px;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #007bff;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Emerald Empire Engineering</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../welcome.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Service.html">Services</a></li>
+                <li><a href="Blog.html" class="active">Blog</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+  </header>
+  
+  <div class="login-container">
+    <form class="login-form" id="loginForm">
+      <h2>Login to Your Account</h2>
+
+      <div class="input-group">
+        <label for="email">Email or Username</label>
+        <input type="text" id="email" placeholder="Enter your email or username" required>
+      </div>
+
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter your password" required>
+      </div>
+
+      <div class="checkbox-group">
+        <input type="checkbox" id="remember">
+        <label for="remember">Remember Me</label>
+      </div>
+
+      <button type="submit">Login</button>
+
+      <p class="forgot-password"><a href="Forget.html">Forgot Password?</a></p>
+      <p class="signup-link">Don't have an account? <a href="Sign.html">Create one</a></p>
+    </form>
+  </div>
+
+  <footer>
+    <p>© 2025 Emerald Empire Engineering. All Rights Reserved.</p>
+    <div class="social-icons">
+      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+  </footer>
+
+  <script>
+    const form = document.getElementById('loginForm');
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+
+      if(email === "user@example.com" && password === "123456") {
+        alert("Login successful!");
+        window.location.href = "index.html";
+      } else {
+        alert("Invalid email or password");
+      }
+    });
+  </script>
+
+</body>
+</html>

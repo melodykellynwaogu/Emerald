@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment - Emerald Empire Engineering</title>
+  <link rel="stylesheet" href="payment.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+  <!-- PayPal JS SDK (replace YOUR_CLIENT_ID with your actual client ID) -->
+  <script src="https://www.paypal.com/sdk/js?client-id=YOUR_CLIENT_ID&currency=USD"></script>
+</head>
+<body>
+  <nav>
+    <a href="About.html">About</a>
+    <a href="Service.html">Services</a>
+    <a href="Contact.html">Contact</a>
+    <a href="Login.html">Login</a>
+  </nav>
+
+  <header>
+    <h1>Checkout</h1>
+    <p>Complete your purchase securely.</p>
+  </header>
+
+  <main class="payment-container">
+    <div class="property-summary">
+      <h2 id="property-title">Property Name</h2>
+      <p class="property-price" id="property-price">$0</p>
+    </div>
+
+    <!-- Manual Card Form -->
+    <form id="payment-form">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" placeholder="John Doe" required>
+
+      <label for="card">Card Number</label>
+      <input type="text" id="card" placeholder="1234 5678 9012 3456" required>
+
+      <label for="expiry">Expiry Date</label>
+      <input type="text" id="expiry" placeholder="MM/YY" required>
+
+      <label for="cvv">CVV</label>
+      <input type="text" id="cvv" placeholder="123" required>
+
+      <button type="submit">Pay Now</button>
+    </form>
+
+    <!-- PayPal Button -->
+    <div id="paypal-button-container" style="margin-top: 20px;"></div>
+
+    <div id="success-message" class="success-message">
+      <h3>Payment Successful! 🎉</h3>
+      <p>Thank you for your purchase. Your property has been reserved.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Emerald Empire Engineering. All Rights Reserved.</p>
+    <div class="social-icons">
+      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+  </footer>
+
+  <script src="payment.js"></script>
+</body>
+</html>

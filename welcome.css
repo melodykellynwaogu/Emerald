@@ -1,0 +1,340 @@
+/* Responsive Design */
+@media (max-width: 900px) {
+  .hero {
+    height: 60vh;
+    padding: 20px 10px;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .about-preview h2,
+  .highlights h2,
+  .cta h2 {
+    font-size: 1.5rem;
+  }
+  .cta {
+    padding: 40px 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    flex-direction: column;
+    height: auto;
+    padding: 40px 10px 20px 10px;
+  }
+  .hero h1 {
+    font-size: 1.3rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+  .logo {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 10px;
+  }
+  nav {
+    padding: 8px 2px;
+  }
+  nav a {
+    margin: 0 6px;
+    font-size: 15px;
+  }
+  .about-preview,
+  .highlights {
+    padding: 20px 5px;
+  }
+  .image-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .cta {
+    padding: 25px 5px;
+  }
+  #chat-widget {
+    width: 98vw;
+    right: 1vw;
+    bottom: 1vw;
+    min-width: unset;
+    max-width: 100vw;
+    border-radius: 8px;
+  }
+  #chat-header {
+    font-size: 1rem;
+    padding: 8px;
+  }
+  #chat-body {
+    max-height: 250px;
+  }
+  #chat-messages {
+    padding: 5px;
+    font-size: 0.95rem;
+  }
+  #chat-input {
+    padding: 6px;
+    font-size: 1rem;
+  }
+  #chat-send {
+    padding: 6px;
+    font-size: 1rem;
+  }
+  footer {
+    padding: 10px 2px;
+    font-size: 0.95rem;
+  }
+  footer .social-icons a {
+    font-size: 18px;
+    margin: 0 4px;
+  }
+}
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  background: url('/images/one.jpg') no-repeat center center/cover;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.hero .overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #0056b3;
+}
+
+/* Navigation */
+nav {
+  background: rgba(0,0,0,0.8);
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 18px;
+}
+
+nav a:hover {
+  color: #007bff;
+}
+
+/* About Preview */
+.about-preview {
+  padding: 40px 20px;
+  background: #f8f8f8;
+  text-align: center;
+  color: #333;
+}
+
+.about-preview h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+/* Highlights */
+.highlights {
+  padding: 40px 20px;
+  background: white;
+  text-align: center;
+  color: #333;
+}
+
+.highlights h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.image-grid img {
+  width: 100%;
+  border-radius: 15px;
+  transition: transform 0.3s;
+}
+
+.image-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* Call To Action */
+.cta {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/images/2.jpg') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.cta h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.cta p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.cta .btn {
+  background: #007bff;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 18px;
+  transition: background 0.3s;
+}
+
+.cta .btn:hover {
+  background: #0056b3;
+}
+
+/* Chat Widget */
+
+#chat-widget {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 300px;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  border-radius: 10px;
+  overflow: hidden;
+  z-index: 9999;
+}
+
+#chat-header {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+}
+
+#chat-body {
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  max-height: 400px;
+}
+
+#chat-body.hidden {
+  display: none;
+}
+
+#chat-messages {
+  padding: 10px;
+  overflow-y: auto;
+  flex-grow: 1;
+}
+
+#chat-messages .message {
+  margin: 5px 0;
+}
+
+#chat-messages .user {
+  text-align: right;
+  color: #007bff;
+}
+
+#chat-messages .bot {
+  text-align: left;
+  color: #333;
+}
+
+#chat-input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  width: calc(100% - 20px);
+  margin: 10px;
+  border-radius: 5px;
+}
+
+#chat-send {
+  margin: 0 10px 10px 10px;
+  padding: 8px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#chat-send:hover {
+  background-color: #0056b3;
+}
+
+
+/* Footer */
+footer {
+  background-image: url('/images/2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 20px 10px;
+  color: white;
+}
+
+footer .social-icons a {
+  color: white;
+  margin: 0 8px;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+footer .social-icons a:hover {
+  color: #007bff;
+}

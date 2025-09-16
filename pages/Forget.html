@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forgot Password - Emerald Empire Engineering</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="forget.css">
+</head>
+<body>
+
+  <div class="forgot-container">
+    <form class="forgot-form" id="forgotForm">
+      <h2>Reset Your Password</h2>
+      <p>Enter your email below and we’ll send you instructions to reset your password.</p>
+
+      <div class="input-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+      </div>
+
+      <button type="submit">Send Reset Link</button>
+
+      <p class="back-link"><a href="Login.html">Back to Login</a></p>
+    </form>
+  </div>
+
+  <footer>
+    <p>© 2025 Emerald Empire Engineering. All Rights Reserved.</p>
+    <div class="social-icons">
+      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+  </footer>
+
+  <script>
+    const form = document.getElementById('forgotForm');
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const email = document.getElementById('email').value.trim();
+
+      if(email) {
+        alert("A reset link has been sent to " + email);
+        window.location.href = "Login.html";
+      } else {
+        alert("Please enter your email address.");
+      }
+    });
+  </script>
+
+</body>
+</html>

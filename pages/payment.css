@@ -1,0 +1,160 @@
+/* Responsive Design */
+@media (max-width: 700px) {
+  .payment-container {
+    max-width: 98vw;
+    padding: 18px 5px;
+    border-radius: 8px;
+  }
+  header {
+    padding: 15px 5px;
+    font-size: 1.1rem;
+  }
+  nav {
+    padding: 8px 2px;
+  }
+  nav a {
+    margin: 0 6px;
+    font-size: 15px;
+  }
+  .property-summary h2 {
+    font-size: 1.1rem;
+  }
+  .property-price {
+    font-size: 1rem;
+  }
+  input {
+    font-size: 1rem;
+    padding: 8px;
+  }
+  button {
+    font-size: 1rem;
+    padding: 10px;
+  }
+  footer {
+    padding: 10px 2px;
+    font-size: 0.95rem;
+  }
+  .social-icons a {
+    font-size: 17px;
+    margin: 0 4px;
+  }
+}
+body {
+  background-image: url('/images/10.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  /* background: #f4f6f9; */
+  color: #333;
+}
+
+nav {
+  background: rgba(0,0,0,0.8);
+  padding: 10px;
+  text-align: center;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 18px;
+}
+nav a:hover {
+  color: #007bff;
+}
+
+
+header {
+  text-align: center;
+  padding: 30px 20px;
+  /* background: #007bff; */
+  color: rgb(54, 50, 50);
+}
+
+.payment-container {
+  max-width: 500px;
+  margin: 40px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.property-summary {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.property-summary h2 {
+  margin-bottom: 5px;
+}
+
+.property-price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px;
+  background: #28a745;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #218838;
+}
+
+.success-message {
+  display: none;
+  text-align: center;
+  margin-top: 20px;
+  color: #28a745;
+}
+footer {
+  background-color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: 30px;
+  color:aliceblue;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: white;
+  margin: 0 8px;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #007bff;
+}

@@ -1,0 +1,140 @@
+/* Responsive Design */
+@media (max-width: 700px) {
+  .chat-box {
+    padding: 10px 2px;
+    font-size: 0.98rem;
+  }
+  .message {
+    padding: 10px 8px;
+    font-size: 0.98rem;
+    max-width: 95%;
+  }
+  .chat-form {
+    padding: 8px 2px;
+  }
+  .chat-form input {
+    padding: 8px;
+    font-size: 1rem;
+  }
+  .chat-form button {
+    padding: 8px 12px;
+    font-size: 1rem;
+  }
+  nav {
+    padding: 8px 2px;
+  }
+  nav a {
+    margin: 0 6px;
+    font-size: 15px;
+  }
+  header {
+    padding: 10px 2px;
+    font-size: 1.1rem;
+  }
+  footer {
+    padding: 10px 2px;
+    font-size: 0.95rem;
+  }
+}
+/* General */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f9;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+nav {
+  background: rgba(0,0,0,0.8);
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 18px;
+}
+
+nav a:hover {
+  color: #007bff;
+}
+
+header {
+  background: #007bff;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+/* Chat Container */
+.chat-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.chat-box {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.message {
+  padding: 12px 16px;
+  margin: 8px 0;
+  border-radius: 12px;
+  max-width: 75%;
+  word-wrap: break-word;
+}
+
+.message.user {
+  background: #007bff;
+  color: white;
+  align-self: flex-end;
+}
+
+.message.system {
+  background: #e1e1e1;
+  align-self: flex-start;
+}
+
+/* Input Form */
+.chat-form {
+  display: flex;
+  padding: 12px;
+  background: white;
+  border-top: 1px solid #ddd;
+}
+
+.chat-form input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+
+.chat-form button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.chat-form button:hover {
+  background: #0056b3;
+}
+footer {
+  background: rgba(0,0,0,0.6);
+  padding: 15px;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 20px;
+}

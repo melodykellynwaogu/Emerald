@@ -1,0 +1,145 @@
+/* Responsive Design */
+@media (max-width: 600px) {
+  .forgot-container {
+    align-items: flex-start;
+    min-height: auto;
+    padding: 30px 0 20px 0;
+  }
+  .forgot-form {
+    max-width: 98vw;
+    padding: 15px 5px;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+  .forgot-form h2 {
+    font-size: 1.1rem;
+  }
+  .forgot-form p {
+    font-size: 0.98rem;
+  }
+  .input-group input {
+    font-size: 1rem;
+    padding: 8px;
+  }
+  button {
+    font-size: 1rem;
+    padding: 10px;
+  }
+  .back-link {
+    font-size: 13px;
+  }
+  footer {
+    font-size: 0.95rem;
+    padding: 10px 2px;
+  }
+  .social-icons a {
+    font-size: 17px;
+    margin: 0 4px;
+  }
+}
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #6c63ff, #00b4d8);
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.forgot-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+}
+
+.forgot-form {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.forgot-form h2 {
+  margin-bottom: 15px;
+  color: #6c63ff;
+}
+
+.forgot-form p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.input-group {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: #6c63ff;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #4a42d4;
+}
+
+.back-link {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.back-link a {
+  color: #6c63ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.back-link a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: white;
+  margin: 0 8px;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #6c63ff;
+}

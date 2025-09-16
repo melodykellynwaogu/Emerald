@@ -1,0 +1,158 @@
+/* Responsive Design */
+@media (max-width: 900px) {
+  main {
+    padding: 20px 10px;
+  }
+  .about-us {
+    padding: 18px 5px;
+  }
+  .about-us h2 {
+    font-size: 1.5rem;
+  }
+  .about-us p {
+    font-size: 1.05rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    font-size: 24px;
+  }
+  header {
+    padding: 8px 2px;
+    font-size: 1rem;
+  }
+  nav {
+    margin: 10px 0;
+    padding: 5px;
+  }
+  nav ul li a {
+    padding: 8px 6px;
+    font-size: 15px;
+  }
+  main {
+    padding: 10px 2px;
+    margin: 10px auto;
+  }
+  .about-us {
+    padding: 10px 2px;
+    border-radius: 7px;
+    font-size: 0.98rem;
+  }
+  .about-us h2 {
+    font-size: 1.1rem;
+  }
+  .about-us p {
+    font-size: 0.98rem;
+  }
+  footer {
+    padding: 10px 2px;
+    font-size: 0.95rem;
+  }
+  .social-icons a {
+    font-size: 17px;
+    margin: 0 4px;
+  }
+}
+body {
+  background-image: url('/images/one.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  font-family: Cochin;
+  font-size: 40px;
+  margin: 10px 0;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  font-family: Cochin;
+  text-align: center;
+}
+
+nav {
+  margin: 20px 0;
+  padding: 10px;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+nav ul li {
+  float: left;
+}
+nav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 40px;
+  margin: 20px auto;
+  max-width: 700px;
+}
+
+.about-us {
+  background-color: rgb(253, 252, 251);
+  padding: 30px;
+  border-radius: 12px;
+  color: rgb(34, 31, 31);
+  font-family: fantasy;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.about-us h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about-us p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.about-us:hover {
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: 30px;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: white;
+  margin: 0 8px;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #007bff;
+}
