@@ -63,6 +63,10 @@ const replies = {
     "Our services include property management and consultancy.",
     "Looking for land, homes, or commercial spaces? We can help!"
   ],
+  emerald: [
+    "Emerald Empire Engineering is committed to carrying the weight of     your property journey. We hold the vision of making real estate opportunities open to all — whether you're a first-time buyer, seasoned investor, or simply exploring.",
+    "In short emerald is a Real estate seasoned investor",
+  ],
   bye: [
     "Goodbye! 👋 Take care!",
     "See you soon! 🌟",
