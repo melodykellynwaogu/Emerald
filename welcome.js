@@ -23,6 +23,7 @@ const responses = {
   "investment": "We offer investment opportunities for both beginners and experienced investors.",
   "price": "Our properties start at $50,000. Prices vary by location and property type.",
   "office": "Visit our office at 123 Emerald Avenue, Lagos.",
+  "thanks": "Your welcome, Enjoy your view round emerald estate",
   "bye": "Goodbye! Wishing you a wonderful day ahead!"
 };
 

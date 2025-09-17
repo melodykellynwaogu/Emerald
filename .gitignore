@@ -1,9 +1,0 @@
-.env
-/vs code/
-.DS_Store
-/node_modules
-/dist
-/build
-/.idea
-*.log
-*.env
